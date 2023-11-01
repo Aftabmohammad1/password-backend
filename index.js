@@ -12,7 +12,7 @@ app.use(express.json())
 app.use(cors())
 
 //mongoDB connection
-const MONGO_URL = process.env.MONGO_URL
+const MONGO_URL = process.env.MONGO_URL 
 
 async function createConnection() {
     const client = new MongoClient(MONGO_URL)
